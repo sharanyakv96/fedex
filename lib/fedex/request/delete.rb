@@ -27,6 +27,7 @@ module Fedex
           end rescue $1
           raise RateError, error_message
         end
+        return response
       end
 
       private
